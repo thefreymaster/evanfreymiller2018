@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { enableProdMode } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { RouterModule, Routes } from '@angular/router';import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule, Routes } from '@angular/router'; import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DataTransferService } from '../app/services/data-transfer.service'
 import { MediaService } from './services/media.service';
 
@@ -28,11 +29,14 @@ import { AccountInfoComponent } from './account-info/account-info.component';
 
 
 const appRoutes: Routes = [
-  { path: 'imagine', component: InfoComponent},
-  { path: '', redirectTo: '/imagine', pathMatch: 'full'}
+  { path: 'imagine', component: InfoComponent },
+  { path: '', redirectTo: '/imagine', pathMatch: 'full' }
 
 
 ];
+
+enableProdMode();
+
 
 
 @NgModule({
@@ -41,7 +45,7 @@ const appRoutes: Routes = [
     ToolbarComponent,
     InfoComponent,
     AccountInfoComponent
-    ],
+  ],
   imports: [
     RouterModule.forRoot(
       appRoutes

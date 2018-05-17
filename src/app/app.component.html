@@ -10,15 +10,15 @@
     </mat-drawer>
 
     <div class="sidenav-content">
-        <mat-toolbar class="eande-toolbar-top">
+        <mat-toolbar id='hide-top' class="eande-toolbar-top">
             <mat-toolbar-row>
                 <button type="button" mat-button matTooltip="I am Evan" routerLink="" disabled>
                     <span class='logo-font'>
-                        <img id='menu-logo' class='margin-top' src="./../../assets/logodark.svg" >
+                        <img class='margin-top' src="./../../assets/logodark.svg" >
                     </span>
                 </button>
                 <span class="fill-remaining-space"></span>
-                <button *ngIf="!service.loading" class='show-animation' type="button" mat-icon-button matTooltip="Movies" [matTooltipPosition]="position"
+                <button *ngIf="!service.loading" type="button" mat-icon-button matTooltip="Movies" [matTooltipPosition]="position"
                     (click)="right.toggle()">
                     <i class="material-icons">
                         import_contacts
@@ -27,7 +27,7 @@
             </mat-toolbar-row>
         </mat-toolbar>
 
-        <div [@routerAnimation]="getRouteAnimation(route)">
+        <div>
             <router-outlet #route="outlet"></router-outlet>
         </div>
 

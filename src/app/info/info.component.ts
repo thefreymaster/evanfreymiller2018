@@ -29,7 +29,7 @@ export class InfoComponent implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       this.service.loading = false
-    }, 3000);
+    }, 3500);
   }
 
 

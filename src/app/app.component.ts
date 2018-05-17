@@ -10,9 +10,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  getRouteAnimation(outlet) {
-    return outlet.activatedRouteData.animation
-  }
   constructor(private mediaService: MediaService, private service: DataTransferService, private router: Router) {
     
   }

@@ -51,7 +51,6 @@ body{
 }
 .margin-top{
     margin-top: 8px;
-    opacity: 0;
 }
 .loading-logo-show{
     animation: show 0.5s 1;
@@ -82,9 +81,14 @@ body{
     -webkit-animation-fill-mode: forwards;
 }
 #imagine{
-    animation: show 0.5s 1;
-    -webkit-animation: show 0.5s 1;
+    opacity: 0;
+    animation: show 1s 1;
+    -webkit-animation: show 1s 1;
     animation-fill-mode: forwards;
+
+    animation-delay:1s;
+    -webkit-animation-delay:1s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
 }
 #loading-parent{
     animation: show 0.1s 1;
@@ -100,6 +104,31 @@ body{
     animation-delay:2.5s;
     -webkit-animation-delay:2.5s; /* Safari and Chrome */
     -webkit-animation-fill-mode: forwards;
+}
+#hide-top{
+    top: -100px;
+    animation: hide-top 0.5s 1;
+    -webkit-animation: hide-top 0.5s 1;
+    animation-fill-mode: forwards;
+
+    animation-delay:2.5s;
+    -webkit-animation-delay:2.5s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+}
+.hide-bottom{
+    bottom: -100px;
+    animation: hide-footer 0.5s 1;
+    -webkit-animation: hide-footer 0.5s 1;
+    animation-fill-mode: forwards;
+
+}
+@keyframes hide-top{
+    from {opacity :0; top: -100px;}
+    to {opacity :1; top: 0px;}
+}
+@keyframes hide-footer{
+    from {opacity :0; bottom: -100px;}
+    to {opacity :1; bottom: 0px;}
 }
 
 @keyframes hide{
@@ -225,7 +254,6 @@ a { color: inherit !important; }
 }
 .fixed-bottom{
     position: fixed;
-	bottom: 0;
 }
 .logo-color{
     background-color: #FF5252  !important;

@@ -13,7 +13,6 @@
     <!-- <mat-spinner color="primary"></mat-spinner> -->
     <img id='loading-logo' [ngClass]='{"mobile-loading-logo": mediaService.screen_break_points.xsmall == true}' class='loading-logo' src="./../../assets/loader.svg">
   </div>
-  <mat-toolbar class='color-override fixed-bottom'></mat-toolbar>
 </div>
 <div fxLayout="column" *ngIf="!service.loading">
 
@@ -36,8 +35,8 @@
     </div>
   </div>
 
-  <mat-toolbar fxHide.xs fxHide.sm class='color-override fixed-bottom'>
-    <mat-toolbar-row fxLayout='row' fxLayoutAlign="center center" class='show-animation'>
+  <mat-toolbar fxHide.xs fxHide.sm class='color-override fixed-bottom hide-bottom'>
+    <mat-toolbar-row fxLayout='row' fxLayoutAlign="center center">
         <a class='remove-decoration' target='_blank' href='https://eande.canvas23.com/'>
           <button class='full-height-button' type="button" mat-button>
             <i color="primary" class="material-icons">movie</i>
@@ -75,8 +74,8 @@
         </a>
     </mat-toolbar-row>
   </mat-toolbar>
-  <mat-toolbar fxHide.md fxHide.lg fxHide.xl class='color-override fixed-bottom'>
-    <mat-toolbar-row fxLayout='row' fxLayoutAlign="center center" class='show-animation'>
+  <mat-toolbar fxHide.md fxHide.lg fxHide.xl class='color-override fixed-bottom hide-bottom'>
+    <mat-toolbar-row fxLayout='row' fxLayoutAlign="center center">
         <a class='remove-decoration' target='_blank' href='https://eande.canvas23.com/'>
           <button type="button" mat-icon-button>
             <i color="primary" class="material-icons">movie</i>
