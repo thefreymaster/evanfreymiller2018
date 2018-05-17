@@ -1,0 +1,10 @@
+.eande-toolbar-top{
+    background: #fafafa;
+	color: #5d5c5c;
+    border-bottom: 1px solid #dacfcf;
+    position: fixed;
+    z-index: 1;
+}
+.white-font{
+    color: white !important;
+}

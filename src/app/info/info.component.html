@@ -1,0 +1,107 @@
+<!-- <mat-grid-list cols="3" rowHeight="5:8" gutterSize="20px">
+    <mat-grid-tile class="mat-elevation-z2">
+      <mat-card>
+        <img mat-card-image class='opacity100 hover-opacity10' src="{{service.currentBigScreenObject.data.Poster}}">
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile class="mat-elevation-z2">
+        <h1>{{service.currentBigScreenObject.data.Title}}</h1>
+      </mat-grid-tile>
+  </mat-grid-list> -->
+<div fxLayout="column" *ngIf="service.loading">
+  <div class='full-height loading-logo-show' *ngIf="service.loading" fxLayout="row" fxLayoutAlign="center center">
+    <!-- <mat-spinner color="primary"></mat-spinner> -->
+    <img id='loading-logo' class='loading-logo' src="./../../assets/loader.svg">
+  </div>
+  <mat-toolbar class='color-override fixed-bottom'></mat-toolbar>
+</div>
+<div fxLayout="column" *ngIf="!service.loading">
+
+
+  <div class='full-height' id='imagine' fxLayout="column" fxLayoutAlign="center center">
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <p class='mat-subheading-2 opacity40 center'>I AM</p>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="start center">
+      <div class='title-main' [ngClass]='{"title-mobile": mediaService.screen_break_points.xsmall == true}'>EVAN</div>
+      <!-- <a *ngIf="service.amazonItems != undefined" class='remove-decoration margin-left10' target='_blank' href='{{service.amazonItems[0].DetailPageURL[0]}}'>
+            <button color="accent" type="button" mat-raised-button>
+              <i class="material-icons">&#xE8CC;</i>
+              <span> Rent Movie</span>
+            </button>
+          </a> -->
+    </div>
+    <div fxLayout="row">
+      <p class='mat-subheading-2 opacity30 center'>Designer • Fullstack • Angular • React • Express</p>
+    </div>
+  </div>
+
+  <mat-toolbar fxHide.xs fxHide.sm class='color-override fixed-bottom'>
+    <mat-toolbar-row fxLayout='row' fxLayoutAlign="center center" class='show-animation'>
+        <a class='remove-decoration' target='_blank' href='https://eande.canvas23.com/'>
+          <button class='full-height-button' type="button" mat-button>
+            <i color="primary" class="material-icons">movie</i>
+            <span> e&e Movies</span>
+
+          </button>
+        </a>
+        <a class='remove-decoration' target='_blank' href='https://coindatabase.herokuapp.com'>
+          <button class='full-height-button' type="button" mat-button>
+            <i color="primary" class="material-icons">toll</i>
+            <span> Coindatabase</span>
+
+          </button>
+        </a>
+        <a class='remove-decoration' target='_blank' href='https://www.youtube.com/channel/UC1nF2hzsIfDu-cpum80GFJQ'>
+          <button class='full-height-button' type="button" mat-button>
+            <i color="primary" class="material-icons">camera</i>
+            <span> Canvas 23 Studios</span>
+
+          </button>
+        </a>
+        <a class='remove-decoration' target='_blank' href='https://github.com/thefreymaster'>
+          <button class='full-height-button' type="button" mat-button>
+            <i color="primary" class="material-icons">dns</i>
+            <span> Github</span>
+
+          </button>
+        </a>
+        <a class='remove-decoration' target='_blank' href='https://www.youtube.com/channel/UC1nF2hzsIfDu-cpum80GFJQ'>
+          <button class='full-height-button' type="button" mat-button>
+            <i color="primary" class="material-icons">pets</i>
+            <span> LolaFSU</span>
+
+          </button>
+        </a>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-toolbar fxHide.md fxHide.lg fxHide.xl class='color-override fixed-bottom'>
+    <mat-toolbar-row fxLayout='row' fxLayoutAlign="center center" class='show-animation'>
+        <a class='remove-decoration' target='_blank' href='https://eande.canvas23.com/'>
+          <button class='full-height-button' type="button" mat-icon-button>
+            <i color="primary" class="material-icons">movie</i>
+          </button>
+        </a>
+        <a class='remove-decoration' target='_blank' href='https://coindatabase.herokuapp.com'>
+          <button class='full-height-button' type="button" mat-icon-button>
+            <i color="primary" class="material-icons">toll</i>
+          </button>
+        </a>
+        <a class='remove-decoration' target='_blank' href='https://www.youtube.com/channel/UC1nF2hzsIfDu-cpum80GFJQ'>
+          <button class='full-height-button' type="button" mat-icon-button>
+            <i color="primary" class="material-icons">camera</i>
+          </button>
+        </a>
+        <a class='remove-decoration' target='_blank' href='https://github.com/thefreymaster'>
+          <button class='full-height-button' type="button" mat-icon-button>
+            <i color="primary" class="material-icons">dns</i>
+          </button>
+        </a>
+        <a class='remove-decoration' target='_blank' href='https://www.youtube.com/channel/UC1nF2hzsIfDu-cpum80GFJQ'>
+          <button class='full-height-button' type="button" mat-icon-button>
+            <i color="primary" class="material-icons">pets</i>
+          </button>
+        </a>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>

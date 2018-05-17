@@ -1,0 +1,12 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:26px;}.cls-2{fill:#fff;}
+
+        </style>
+    </defs>
+    <title>loader</title>
+    <rect class="cls-1" x="189.42" y="194.31" width="621.47" height="621.06" transform="translate(1210.8 508.16) rotate(135)"/>
+    <path class="cls-2" d="M517.81,456.54H438.94l-9,51.31h93.32l-6.93,39.81H372.6L409.75,333h144L546.86,373H453.39l-8,45.26h79Z"/>
+    <path class="cls-2" d="M597.13,636.87H516.2l-14.89,85.51H450.89L488,507.73H627.65l-6.93,39.95h-89l-8.55,49.39h80.94Z"/>
+</svg>

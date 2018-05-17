@@ -1,0 +1,45 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<header>
+
+</header>
+<mat-drawer-container class="sidenav-container" autosize (backdropClick)="close('backdrop')">
+    <mat-drawer position="start" #drawer class="mat-elevation-z2" mode="push" (keydown.escape)="close('escape')">
+        <mat-toolbar class="color-override e-divider" fxLayout="column" fxLayoutAlign="center center">
+            <i class="material-icons">local_movies</i>
+        </mat-toolbar>
+    </mat-drawer>
+
+    <div class="sidenav-content">
+        <mat-toolbar class="eande-toolbar-top">
+            <mat-toolbar-row>
+                <button type="button" mat-button matTooltip="I am Evan" routerLink="" disabled>
+                    <span class='logo-font'>
+                        <img class='margin-top' src="./../../assets/logodark.svg">
+                    </span>
+                </button>
+                <span class="fill-remaining-space"></span>
+                <button *ngIf="!service.loading" class='show-animation' type="button" mat-icon-button matTooltip="Movies" [matTooltipPosition]="position"
+                    (click)="right.toggle()">
+                    <i class="material-icons">
+                        import_contacts
+                    </i>
+                </button>
+            </mat-toolbar-row>
+        </mat-toolbar>
+
+        <div [@routerAnimation]="getRouteAnimation(route)">
+            <router-outlet #route="outlet"></router-outlet>
+        </div>
+
+
+    </div>
+    <mat-drawer position="end" #right class="mat-elevation-z2" mode="push" (keydown.escape)="close('escape')">
+        <mat-toolbar class="color-override e-divider" fxLayout="column" fxLayoutAlign="center center">
+            Imagine
+        </mat-toolbar>
+        <app-account-info></app-account-info>
+
+    </mat-drawer>
+
+
+</mat-drawer-container>
