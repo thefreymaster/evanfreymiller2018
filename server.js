@@ -25,10 +25,6 @@ if (env === 'production') {
     app.use(forceSsl);
 }
 
-
-
-
-
 var port = 9700;
 app.listen(process.env.PORT || port, function () {
     console.log('Running REST HTTPS server on port: ' + port);

@@ -2,6 +2,9 @@
   "name": "evanfreymiller2018",
   "version": "1.2.0",
   "license": "MIT",
+  "engines": {
+    "node": "9.4.0"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng build -w & nodemon server.js",
