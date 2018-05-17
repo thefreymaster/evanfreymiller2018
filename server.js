@@ -1,7 +1,5 @@
 var express = require('express');
-var request = require("request");
 var path = require("path");
-var cors = require('cors');
 var helmet = require('helmet')
 
 

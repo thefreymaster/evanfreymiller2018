@@ -12,7 +12,7 @@ import { slideInOutAnimation } from '../_animations/slide.animation';
   templateUrl: './info.component.html',
   styleUrls: ['./info.component.css']
 })
-export class MovieInfoComponent implements OnInit {
+export class InfoComponent implements OnInit {
   loading = true;
 
   constructor(private service: DataTransferService, router: Router, private mediaService: MediaService) {

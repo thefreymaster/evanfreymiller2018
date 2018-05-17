@@ -51,11 +51,18 @@ body{
 }
 .margin-top{
     margin-top: 8px;
+    opacity: 0;
 }
 .loading-logo-show{
     animation: show 0.5s 1;
     -webkit-animation: show 0.5s 1;
     animation-fill-mode: forwards;
+}
+.mobile-margin-correction{
+    margin-top: -60px;
+}
+.mobile-loading-logo{
+    max-width: 75px !important;
 }
 
 .show-animation{
@@ -85,6 +92,16 @@ body{
     animation-fill-mode: forwards;
 }
 
+#menu-logo{
+    animation: show 0.5s 1;
+    -webkit-animation: show 0.5s 1;
+    animation-fill-mode: forwards;
+
+    animation-delay:2.5s;
+    -webkit-animation-delay:2.5s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+}
+
 @keyframes hide{
     from {opacity :1; transform: scale(1.0);}
     to {opacity :0;transform: scale(1.2);}
@@ -100,8 +117,11 @@ body{
 }
 
 
+
+
 .margin-align{
     margin-top: -15px;
+    opacity: 0;
 }
 .fill-remaining-space {
     flex: 1 1 auto;

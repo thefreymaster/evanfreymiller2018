@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
 import { Router } from '@angular/router';
 
 
@@ -25,7 +24,7 @@ export class DataTransferService {
 
   
 
-  constructor(private http: HttpClient, private router: Router) { 
+  constructor(private router: Router) { 
 
   }
 
