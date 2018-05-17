@@ -76,18 +76,18 @@ body{
     -webkit-animation: hide 0.5s 1;
     animation-fill-mode: forwards;
 
-    animation-delay:2.5s;
-    -webkit-animation-delay:2.5s; /* Safari and Chrome */
+    animation-delay:3.5s;
+    -webkit-animation-delay:3.5s; /* Safari and Chrome */
     -webkit-animation-fill-mode: forwards;
 }
 #imagine{
     opacity: 0;
-    animation: show 1s 1;
-    -webkit-animation: show 1s 1;
+    animation: show 1.5s 1;
+    -webkit-animation: show 1.5s 1;
     animation-fill-mode: forwards;
 
-    animation-delay:1s;
-    -webkit-animation-delay:1s; /* Safari and Chrome */
+    animation-delay:2s;
+    -webkit-animation-delay:2s; /* Safari and Chrome */
     -webkit-animation-fill-mode: forwards;
 }
 #loading-parent{
