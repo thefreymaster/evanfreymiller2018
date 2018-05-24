@@ -10,11 +10,11 @@
     </mat-drawer>
 
     <div class="sidenav-content">
-        <mat-toolbar id='hide-top' class="eande-toolbar-top">
+        <mat-toolbar *ngIf="!service.loading" id='hide-top' class="eande-toolbar-top">
             <mat-toolbar-row>
                 <button type="button" mat-button matTooltip="I am Evan" routerLink="" disabled>
                     <span class='logo-font'>
-                        <img class='margin-top' src="./../../assets/logodark.svg" >
+                        <img class='margin-top' src="./../../assets/loader.svg" >
                     </span>
                 </button>
                 <span class="fill-remaining-space"></span>
