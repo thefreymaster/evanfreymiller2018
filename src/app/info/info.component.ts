@@ -15,7 +15,7 @@ import { slideInOutAnimation } from '../_animations/slide.animation';
 export class InfoComponent implements OnInit {
   loading = true;
 
-  constructor(private service: DataTransferService, router: Router, private mediaService: MediaService) {
+  constructor(public service: DataTransferService, router: Router, public mediaService: MediaService) {
 
 
   }

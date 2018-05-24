@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private mediaService: MediaService, private service: DataTransferService, private router: Router) {
+  constructor(public mediaService: MediaService, public service: DataTransferService, public router: Router) {
     
   }
 
