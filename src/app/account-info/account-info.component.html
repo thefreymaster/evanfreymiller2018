@@ -86,8 +86,7 @@
     </mat-list-item>
   </a>
   <mat-divider></mat-divider>
-  <a class='no-outline' target='_blank' href='../../resume.pdf'>
-    <mat-list-item>
+    <mat-list-item (click)='openResume()'>
       <mat-icon mat-list-icon>
         <i class="material-icons">
           fingerprint
@@ -97,6 +96,5 @@
       <p mat-line>Evan Freymiller</p>
 
     </mat-list-item>
-  </a>
   <mat-divider></mat-divider>
 </mat-nav-list>

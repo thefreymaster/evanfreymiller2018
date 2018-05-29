@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-account-info',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountInfoComponent implements OnInit {
 
-  constructor() { }
+  constructor(public http: HttpClient) { }
 
   ngOnInit() {
   }
@@ -28,5 +29,8 @@ export class AccountInfoComponent implements OnInit {
         location.reload();
       }, 200);
     }
+  }
+  openResume(){
+    this.http.get('/resume').subscribe(data => {});
   }
 }

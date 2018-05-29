@@ -5,6 +5,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule, Routes } from '@angular/router'; import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DataTransferService } from '../app/services/data-transfer.service'
 import { MediaService } from './services/media.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -61,7 +62,8 @@ enableProdMode();
     MatListModule,
     MatIconModule,
     FlexLayoutModule,
-    MatTooltipModule
+    MatTooltipModule,
+    HttpClientModule
   ],
   providers: [DataTransferService, MediaService],
   bootstrap: [AppComponent],

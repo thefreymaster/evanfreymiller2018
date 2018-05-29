@@ -32,18 +32,22 @@ app.use(express.static(__dirname + '/dist'));
 
 
 app.get('/', function (request, response) {
-
     response.sendFile(path.resolve(__dirname, 'index.html'));
 });
-
+app.get('/resume', function (request, response) {
+    console.log(__dirname)
+    response.sendFile(path.resolve(__dirname, 'dist/assets/resume.pdf'));
+});
 
 app.get('', function (req, res) {
     res.redirect('/');
 });
 
+
 app.get('/imagine', function (req, res) {
     res.redirect('/');
 });
+
 
 app.get('*', function (req, res) {
     res.redirect('/');
