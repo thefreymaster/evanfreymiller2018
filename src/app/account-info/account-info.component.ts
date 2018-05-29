@@ -30,7 +30,4 @@ export class AccountInfoComponent implements OnInit {
       }, 200);
     }
   }
-  openResume(){
-    this.http.get('/resume').subscribe(data => {});
-  }
 }
