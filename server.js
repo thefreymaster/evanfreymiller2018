@@ -36,7 +36,7 @@ app.get('/', function (request, response) {
 });
 app.get('/resume', function (request, response) {
     console.log(__dirname)
-    response.sendFile(path.resolve(__dirname, 'dist/assets/resume.pdf'));
+    response.sendFile(path.resolve(__dirname, 'dist/assets/evanfreymiller2018resume.pdf'));
 });
 
 app.get('', function (req, res) {
