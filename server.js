@@ -38,6 +38,10 @@ app.get('/resume', function (request, response) {
     console.log(__dirname)
     response.sendFile(path.resolve(__dirname, 'dist/assets/evanfreymiller2018resume.pdf'));
 });
+app.get('/resume/print', function (request, response) {
+    console.log(__dirname)
+    response.sendFile(path.resolve(__dirname, 'dist/assets/evanfreymiller2018resumeprint.pdf'));
+});
 
 app.get('', function (req, res) {
     res.redirect('/');
