@@ -39,6 +39,7 @@ app.get('/resume', function (request, response) {
     response.sendFile(path.resolve(__dirname, 'dist/assets/evanfreymiller2018resumeprint.pdf'));
 });
 
+
 app.get('', function (req, res) {
     res.redirect('/');
 });
