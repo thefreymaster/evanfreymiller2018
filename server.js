@@ -36,10 +36,6 @@ app.get('/', function (request, response) {
 });
 app.get('/resume', function (request, response) {
     console.log(__dirname)
-    response.sendFile(path.resolve(__dirname, 'dist/assets/evanfreymiller2018resume.pdf'));
-});
-app.get('/resume/print', function (request, response) {
-    console.log(__dirname)
     response.sendFile(path.resolve(__dirname, 'dist/assets/evanfreymiller2018resumeprint.pdf'));
 });
 
